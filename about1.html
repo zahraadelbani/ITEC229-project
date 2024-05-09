@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about </title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+            text-align: center;
+            /* Center the images horizontally */
+            margin: 0 auto;
+            /* Center the images vertically */
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .caption {
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 12px;
+            display: block;
+            
+            text-align: center;
+        }
+
+        /* Number text  */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#cccbcb">
+
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+    <a href="https://www.facebook.com/zahraa.delbani.9" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/ZahraaDelbani" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/_zahraadelbani_/" target="_blank" class="fa fa-instagram"></a>
+
+    <!-- logo -->
+    <center> <img src="zee galleries.jpg" alt="logo" width="250" height="48"></center>
+
+    <br>
+
+    <!-- navigation bar -->
+    <hr>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html" target="_parent">HOME</a></li>
+
+            <li><a href="about1.html" target="_self">ABOUT</a></li>
+
+            <li><a href="hobbies.html" target="_self">HOBBIES</a></li>
+
+            <li><a href="my art.html" target="_self">MY ART</a></li>
+
+            <li><a href="contact.html" target="_self">CONTACT</a></li>
+
+            <li><a href="feedback.html" target="_self">FEEDBACK</a></li>
+
+            
+        </ul>
+    </nav>
+    <hr>
+
+
+    <h2 align="center">
+        <font face="Courier New"><u>ABOUT</u></font>
+    </h2>
+
+    <font size="4" face="Courier New">
+        <p align= "justify">Hello there ! My name is Zahraa Delbani, I'm from <a href="https://www.britannica.com/place/The-Gambia"
+                target="_blank">Banjul, Gambia.</a>
+            I'm a student at Eastern Mediterranean University, studying Information Technology. I have a genuine passion
+            for web development and hope to build my career in this exciting field. Painting is my true artistic outlet,
+            where I can let my creativity flow and create unique and captivating <a href="my art.html">artwork</a>.</p>
+
+        <p align= "justify"> In my family, I have three siblings: Sonia, who is studying Pharmacy at EMU, Hawraa, who is still in high
+            school, and Israa, who is happily exploring the world in kindergarten. My parents, Bassem and Lina, have
+            been my pillars of support throughout my journey.</p>
+
+        <p align= "justify"> I have a diverse background, being both Gambian and <a href="https://www.britannica.com/place/Lebanon"
+                target="_blank">Lebanese</a>. Growing up in Gambia has shaped my values and provided me with a deep
+            appreciation for cultural diversity. My birthday falls on June 17th, 2002, marking the beginning of my
+            life's adventures.</p>
+
+        <p align= "justify"> I'm excited to continue my education, embrace new opportunities, and learn and grow in the fields of web
+            development and art.</p>
+
+        </p>
+    </font>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="about pics/familypic.jpg" style="width:500px; height:350px">
+            <div class="caption">My lovely family</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="about pics/friends.jpg" style="width:500px; height:350px">
+            <div class="caption">Friends</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="about pics/trio.jpg" style="width:500px; height:350px">
+            <div class="caption">The triplets</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="about pics/fam.jpg" style="width:500px; height:350px">
+            <div class="caption">A cute family picture</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="about pics/dad.jpg" style="width:400px; height:500px">
+            <div class="caption">First love</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="about pics/bsis.jpg" style="width:400px; height:550px">
+            <div class="caption">baby sister(Israa)</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="about pics/friendd.jpg" style="width:400px; height:500px">
+            <div class="caption">friends</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="about pics/sister.jpg" style="width:400px; height:500px">
+            <div class="caption">with Sonia(sister)</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="about pics/mom.jpg" style="width:400px; height:500px">
+            <div class="caption">mom(bestie)</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="about pics/friendss.jpg" style="width:500px; height:300px">
+            <div class="caption"> friend group</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            } else if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Remove the "active" class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            // Show the current slide and add the "active" class to the corresponding dot
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <p align="center">&copy; 2023 Zee Galleries. Zahraa Delbani.</p>
+
+</body>
+
+</html>

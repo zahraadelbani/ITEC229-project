@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "arial", Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    fieldset {
+      border: 4px solid #333;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0 auto;
+      width: 400px;
+      background-color: #7b7b7b;
+      box-sizing: border-box;
+    }
+
+    legend {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 20px;
+      background-color: #333;
+      color: #c5c3c3;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #4b4b4b;
+    }
+  </style>
+</head>
+
+<body bgcolor="#cccbcb">
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Add font awesome icons -->
+  <a href="https://www.facebook.com/zahraa.delbani.9" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/ZahraaDelbani" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/_zahraadelbani_/" target="_blank" class="fa fa-instagram"></a>
+
+  <!-- logo -->
+  <center> <img src="zee galleries.jpg" alt="logo" width="250" height="48"></center>
+
+  <br>
+
+  <!-- navigation bar -->
+  <hr>
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html" target="_parent">HOME</a></li>
+
+      <li><a href="about1.html" target="_self">ABOUT</a></li>
+
+      <li><a href="hobbies.html" target="_self">HOBBIES</a></li>
+
+      <li><a href="my art.html" target="_self">MY ART</a></li>
+
+      <li><a href="contact.html" target="_self">CONTACT</a></li>
+
+      <li><a href="feedback.html" target="_self">FEEDBACK</a></li>
+
+      
+    </ul>
+  </nav>
+  <hr>
+
+  <h1>Feedback Form</h1>
+  <p>This is my first ever website that I created therefore I value your feedback. Please take a moment to fill out this form to help me improve.</p>
+
+  <form method="post" action="">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <br>
+      <div>
+        <label for="surname">Surname:</label>
+        <input id="surname" name="surname" type="text" required>
+      </div>
+      <br>
+      <div>
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <br>
+      <div>
+        <label for="age">Age :</label>
+        <input id="age" name="age" type="number" min="18" max="60">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback</legend>
+      <div>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+      </div>
+      <br>
+      <div>
+        <label>Things you liked:</label>
+        <label class="checkbox-label">
+          <input name="opinion" type="checkbox" value="color palette">
+          Color palette
+        </label>
+        <label class="checkbox-label">
+          <input name="opinion" type="checkbox" value="design">
+          Design
+        </label>
+        <label class="checkbox-label">
+          <input name="opinion" type="checkbox" value="organization" checked>
+          Organization
+        </label>
+        <label class="checkbox-label">
+          <input name="opinion" type="checkbox" value="images">
+          Images
+        </label>
+        <label class="checkbox-label">
+          <input name="opinion" type="checkbox" value="ease of use">
+          Ease of use
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="rating">Rate my site (0-10):</label>
+        <input id="rating" type="range" name="rating" min="0" max="10" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+      <div>
+        <label for="referrer">How did you find my site?</label>
+        <select name="referrer" required>
+          <option selected>Excellent</option>
+          <option>very good</option>
+          <option>good</option>
+          <option>fair</option>
+          <option>bad</option>
+          <option>very bad</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="improvements">Suggestions for improvements:</label>
+        <textarea id="improvements" name="improvements" rows="4"></textarea>
+      </div>
+    </fieldset>
+
+    <br>
+    <div class="btn-container">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+  <p align="center">&copy; 2023 Zee Galleries. Zahraa Delbani.</p>
+</body>
+
+</html>

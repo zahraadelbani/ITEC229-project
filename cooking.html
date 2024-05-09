@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cooking</title>
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #b9b9b9;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        padding: 20px;
+      }
+      .back-btn {
+        
+        display: inline-block;
+        background-color: #ffffff;
+        color: #393939;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+      }
+      .back-btn:hover {
+        background-color: #555;
+      }
+      .food-list li {
+        display: flex;
+        align-items: center;
+      }
+      .food-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    </style>
+    <script>
+      function goBack() {
+        window.top.location.href = 'home.html';
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+
+        <button class="back-btn" onclick="goBack()">Go Back to Home</button>
+
+      <h1>Cooking</h1>
+      <p>
+        Cooking holds a special place in my heart, and I thoroughly enjoy
+        crafting a diverse range of mouthwatering dishes that have become
+        cherished favorites of mine.
+      </p>
+    </header>
+
+    <main>
+     
+      <ol class="food-list">
+
+        <li><b>Main Dishes</b></li>
+        <ul>
+          <li>
+            <span><img class="food-img" src="chicken_shawarma.jpg" alt="Chicken Shawarma"></span>
+            Chicken shawarma
+        </li>
+          <li>
+            <span><img class="food-img" src="spaghetti-bolognese.jpg" alt="Spaghetti Bolognese"></span>
+            Spaghetti Bolognese
+          </li>
+
+          <li>
+            <span><img class="food-img" src="chow_mein_noodles.jpg" alt="Chow-mein Noodles"></span>
+            Chow-mein Noodles
+          </li>
+        </ul>
+
+        <li><b>Side Dishes</b></li>
+        <ul>
+          <li>
+            <span><img class="food-img" src="garlic_bread.jpg" alt="Garlic Bread"></span>
+            Garlic Bread
+          </li>
+        
+          <li>
+            <span><img class="food-img" src="roasted_vegetables.jpg" alt="Roasted Vegetables"></span>
+            Roasted Vegetables
+          </li>
+
+          <li>
+            <span><img class="food-img" src="hummus.jpg" alt="Hummus"></span>
+            Hummus
+          </li>
+        </ul>
+
+        <li><b>Desserts</b></li>
+        <ul>
+          <li><span><img class="food-img" src="tres_leches.jpg" alt="Tres Leches"></span>
+            Tres Leches
+          </li>
+
+          <li><span><img class="food-img" src="cheesecake.jpg" alt="Cheesecake"></span>
+            Cheesecake
+          </li>
+
+          <li><span><img class="food-img" src="lazy_cake.jpg" alt="Lazy Cake"></span>
+            Lazy Cake
+          </li>
+
+        </ul>
+        <li><b>Baking</b></li>
+        <ul>
+          <li>
+            <span><img class="food-img" src="cake.jpg" alt="Cake"></span>
+            Cake
+          </li>
+          <li>
+            <span><img class="food-img" src="cookies.jpg" alt="Cookies"></span>
+            Cookies
+          </li>
+          <li>
+            <span><img class="food-img" src="banana_bread.jpg" alt="Banana Bread"></span>
+            Banana Bread
+          </li>
+        </ul>
+      </ol>
+    </main>
+  </body>
+</html>
